@@ -7,7 +7,12 @@ npm run dev to run on local device
 
 
 TODO: 
-Bug fix with routing. When page is refreshed, it stops working. Use 404.html hack.  
+Debug website on different devices
+Purchase custom domain, then fix routing issues that will inevitably occur
+Build basic functionality of website
+
+
+
 
 Info to include: 
 Closest Airports 
