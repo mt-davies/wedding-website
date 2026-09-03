@@ -12,18 +12,18 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/wedding-website">
         <Routes>
-          <Route path="/wedding-website" element={<Navigate to="/wedding-website/announcement" replace />} />
+          <Route path="/" element={<Navigate to="/wedding-website/announcement" replace />} />
           <Route
-            path="/wedding-website/announcement"//TODO: update paths to what they'll be on the published website
+            path="/announcement"//TODO: update paths to what they'll be on the published website
             element={
               <Announcement />
             }
           />
 
           <Route
-            path="/wedding-website/travel"//TODO: update paths to what they'll be on the published website
+            path="/travel"//TODO: update paths to what they'll be on the published website
             element={
               <TravelInfo />
             }

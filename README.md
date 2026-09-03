@@ -6,7 +6,8 @@ On wedding-website-react: npm run predeploy then npm run deploy for gh-pages web
 npm run dev to run on local device
 
 
-
+TODO: 
+Bug fix with routing. When page is refreshed, it stops working. Use 404.html hack.  
 
 Info to include: 
 Closest Airports 
