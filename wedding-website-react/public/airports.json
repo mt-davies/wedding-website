@@ -1,0 +1,42 @@
+[
+  {
+    "preferredOrder": 1,
+    "name": "Quad Cities International Airport",
+    "location": "Moline, IL",
+    "milesAway": 100
+  },
+  {
+    "preferredOrder": 2,
+    "name": "Peoria International Airport",
+    "location": "Peoria, IL",
+    "milesAway": 101
+  },
+  {
+    "preferredOrder": 3,
+    "name": "Eastern Iowa Airport",
+    "location": "Cedar Rapids, IA",
+    "milesAway": 114,
+    "note": "Best if you need to stop in Iowa City along the way."
+  },
+  {
+    "preferredOrder": 4,
+    "name": "St. Louis Lambert International Airport",
+    "location": "St. Louis, MO",
+    "milesAway": 166,
+    "note": "This will take a longer drive to Nauvoo once you land, but you may have more options for flights."
+  },
+  {
+    "preferredOrder": 5,
+    "name": "Southeast Iowa Regional Airport",
+    "location": "Burlington, IA",
+    "milesAway": 27,
+    "note": "Only flies to and from Chicago via Contour Airlines, so flight options are limited."
+  },
+  {
+    "preferredOrder": 6,
+    "name": "Quincy Regional Airport",
+    "location": "Quincy, IL",
+    "milesAway": 55,
+    "note": "Only flies to and from Chicago and Nashville via Contour Airlines, so flight options are also limited."
+  }
+]
