@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
@@ -26,18 +26,18 @@ const Announcement = () => {
 
       const daysLeft = Math.floor(differenceInMs / (1000 * 60 * 60 * 24));
       setDaysUntil(daysLeft);
-      remainderInMs -= daysLeft*(1000 * 60 * 60 * 24); //get rest of ms left after full days taken out
-      
+      remainderInMs -= daysLeft * (1000 * 60 * 60 * 24); //get rest of ms left after full days taken out
+
       const hoursLeft = Math.floor(remainderInMs / (1000 * 60 * 60));
       setHoursUntil(hoursLeft);
-      remainderInMs -= hoursLeft*(1000 * 60 * 60); 
-      
+      remainderInMs -= hoursLeft * (1000 * 60 * 60);
+
       const minutesLeft = Math.floor(remainderInMs / (1000 * 60));
       setMinutesUntil(minutesLeft);
-      remainderInMs -= minutesLeft*(1000 * 60); 
-      
+      remainderInMs -= minutesLeft * (1000 * 60);
+
       setSecondsUntil(Math.floor(remainderInMs / (1000)));
-      
+
     };
 
     setInterval(calculateTimeUntil, 1000);
@@ -54,24 +54,34 @@ const Announcement = () => {
 
     <div>
 
-      <h1>February 27, 2027</h1>
 
-<br></br>
 
-      <p>{daysUntil} {daysUntil==1 ? "Day " : "Days "} 
-        {hoursUntil} {hoursUntil==1 ? "Hour " : "Hours "} 
-        {minutesUntil} {minutesUntil==1 ? "Minute " : "Minutes "} 
-        {secondsUntil} {secondsUntil==1 ? "Second " : "Seconds "}</p>
+      <h1>Hannah McGinty</h1>
+      <p>and</p>
+      <h1>Miles Davies</h1>
+      <h4>are getting married!</h4>
 
-        <br></br>
 
-      <Link to="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</Link>
+
+      <h2>February 27, 2027</h2>
+
+
+      <p>{daysUntil} {daysUntil == 1 ? "Day " : "Days "}
+        {hoursUntil} {hoursUntil == 1 ? "Hour " : "Hours "}
+        {minutesUntil} {minutesUntil == 1 ? "Minute " : "Minutes "}
+        {secondsUntil} {secondsUntil == 1 ? "Second " : "Seconds "}</p>
+
+      <br></br>
+
+      <h2>Nauvoo, Illinois</h2>
+
+      <a href="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</a>
 
       <br></br>
 
       <Link to="/travel">Travel Info</Link>
 
-      
+      <p>More details about the wedding to come! </p>
 
     </div>
 
