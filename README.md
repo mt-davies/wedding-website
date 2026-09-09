@@ -7,7 +7,7 @@ npm run dev to run on local device
 
 
 TODO: 
-Debug website on different devices
+Make website base url seperate and not reroute to any other page before debugging with custom domain
 Purchase custom domain, then fix routing issues that will inevitably occur
 Build basic functionality of website
 
@@ -21,4 +21,8 @@ Info for block hotel rooms if needed
 
 Link to Wedding Registry
 
+Gallery - Dating, Engagement, and eventually wedding photos, with info of how to submit your own photos
 
+Attire for guests/wedding party
+
+Daily schedule, explanation of temple

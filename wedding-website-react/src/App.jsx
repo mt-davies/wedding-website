@@ -10,7 +10,14 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/announcement" replace />} />
+          <Route
+            path="/"//Main site also routes to Announcement
+            element={
+              <Announcement />
+            }
+          />  
+
+
           <Route
             path="/announcement"//TODO: update paths to what they'll be on the published website
             element={
