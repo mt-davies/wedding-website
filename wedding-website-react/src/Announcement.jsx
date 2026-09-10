@@ -6,10 +6,10 @@ import { useState, useEffect } from 'react';
 const Announcement = () => {
 
 
-  const [daysUntil, setDaysUntil] = useState(0);
-  const [hoursUntil, setHoursUntil] = useState(0);
-  const [minutesUntil, setMinutesUntil] = useState(0);
-  const [secondsUntil, setSecondsUntil] = useState(0);
+  const [daysUntil, setDaysUntil] = useState("");
+  const [hoursUntil, setHoursUntil] = useState("");
+  const [minutesUntil, setMinutesUntil] = useState("");
+  const [secondsUntil, setSecondsUntil] = useState("");
 
   const [weddingTime, setWeddingTime] = useState("2027-02-27T16:00:00.000Z"); //10 am Nauvoo time, aka 16:00 UTC
 
@@ -54,25 +54,35 @@ const Announcement = () => {
 
     <div>
 
-
-
-      <h1>Hannah McGinty</h1>
-      <p>and</p>
-      <h1>Miles Davies</h1>
-      <h4>are getting married!</h4>
-
-
-
-      <h2>February 27, 2027</h2>
-
-
-      <p>{daysUntil} {daysUntil == 1 ? "Day " : "Days "}
-        {hoursUntil} {hoursUntil == 1 ? "Hour " : "Hours "}
-        {minutesUntil} {minutesUntil == 1 ? "Minute " : "Minutes "}
-        {secondsUntil} {secondsUntil == 1 ? "Second " : "Seconds "}</p>
-
       <br></br>
 
+      <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)"}}>Hannah McGinty</h1>
+      <h3 style={{ fontFamily: "var(--font-cursive)" }}>and</h3>
+      <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)"}}>Miles Davies</h1>
+      <h2 style={{fontStyle: "italic"}}> are getting married!</h2>
+
+
+      <div className="main-image-container">
+        <img
+          className="main-image"
+          src="..\images\gallery\IMG_20260907_111453.jpg"
+          alt="Wedding Announcement"
+        ></img>
+
+
+
+
+        <p className="main-image-text">{daysUntil} {daysUntil === "" ? "" : daysUntil == 1 ? "Day " : "Days "}
+          {hoursUntil} {hoursUntil === "" ? "" : hoursUntil == 1 ? "Hour " : "Hours "}
+          {minutesUntil} {minutesUntil === "" ? "" : minutesUntil == 1 ? "Minute " : "Minutes "}
+          {secondsUntil} {secondsUntil === "" ? "" : secondsUntil == 1 ? "Second " : "Seconds "}
+        </p>
+
+
+      </div>
+
+      <br></br>
+      <h2>February 27, 2027</h2>
       <h2>Nauvoo, Illinois</h2>
 
       <a href="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</a>
@@ -82,6 +92,8 @@ const Announcement = () => {
       <Link to="/travel">Travel Info</Link>
 
       <p>More details about the wedding to come! </p>
+
+      <br></br>
 
     </div>
 
