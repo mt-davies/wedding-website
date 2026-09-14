@@ -53,6 +53,9 @@ const TravelInfo = () => {
 
       <h1>Travel Information</h1>
 
+      <h2>Block Hotel Rooms</h2>
+      <p>There is a strong possibility that we will have block hotel rooms available in Nauvoo for family and friends traveling long distances. More information to come. Contact Hannah or Miles if you think you will need a hotel for the night before and/or after the wedding. </p>
+
 
       <h2>Closest Airports</h2>
 
@@ -78,9 +81,7 @@ const TravelInfo = () => {
 
       <br></br>
 
-      <h2>Block Hotel Rooms</h2>
-      <p>There is a strong possibility that we will have block hotel rooms available in Nauvoo for family and friends traveling long distances. More information to come. Contact Hannah or Miles if you think you will need a hotel for the night before and/or after the wedding. </p>
-
+      
 
 
       <br></br>
