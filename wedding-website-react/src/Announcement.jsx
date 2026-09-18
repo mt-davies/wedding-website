@@ -94,13 +94,13 @@ const Announcement = () => {
 
         <Link to="/travel" className="image-link travel-image">Travel Info</Link>
         
-        <Link to="/schedule" className="image-link temple-image">Schedule</Link>
+        {false && <Link to="/schedule" className="image-link temple-image">Schedule</Link>}
 
-        <Link to="/guestinfo" className="image-link guest-info-image">Guest Info</Link>
+        {false && <Link to="/guestinfo" className="image-link guest-info-image">Guest Info</Link>}
 
-        <Link to="/registry" className="image-link frog-image">Gift Registry</Link>
+        {false && <Link to="/registry" className="image-link frog-image">Gift Registry</Link>}
 
-        <Link to="/gallery" className="image-link looking-at-temple-image">Gallery</Link>
+        {false && <Link to="/gallery" className="image-link looking-at-temple-image">Gallery</Link>}
 
       </div>
 
