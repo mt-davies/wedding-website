@@ -305,3 +305,33 @@
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/images/gallery/20260719_195501.jpg") center / cover no-repeat;
 }
+
+
+
+
+
+.travel-sort {
+  width: 260px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-apricot);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--color-eucalyptus);
+  box-shadow: 0 4px 12px rgba(30, 103, 90, 0.12);
+  font-family: var(--sans);
+  font-size: 18px;
+}
+
+.airport-card {
+  width: min(100%, 600px);
+  margin: 24px auto;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid var(--color-apricot);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--color-eucalyptus);
+  box-shadow: 0 4px 12px rgba(30, 103, 90, 0.12);
+  font-family: var(--sans);
+  font-size: 18px;
+}
