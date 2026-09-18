@@ -11,6 +11,7 @@
   &:hover {
     border-color: var(--accent-border);
   }
+
   &:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
@@ -42,8 +43,7 @@
     z-index: 1;
     top: 34px;
     height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
   }
 
   .vite {
@@ -51,8 +51,7 @@
     top: 107px;
     height: 26px;
     width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
   }
 }
 
@@ -75,9 +74,10 @@
   border-top: 1px solid var(--border);
   text-align: left;
 
-  & > div {
+  &>div {
     flex: 1 1 0;
     padding: 32px;
+
     @media (max-width: 1024px) {
       padding: 24px 20px;
     }
@@ -130,6 +130,7 @@
     &:hover {
       box-shadow: var(--shadow);
     }
+
     .button-icon {
       height: 18px;
       width: 18px;
@@ -156,6 +157,7 @@
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
+
   @media (max-width: 1024px) {
     height: 48px;
   }
@@ -177,6 +179,7 @@
     left: 0;
     border-left-color: var(--border);
   }
+
   &::after {
     right: 0;
     border-right-color: var(--border);
@@ -206,12 +209,19 @@
   transform: translateX(-50%);
   width: max-content;
   max-width: calc(100% - 32px);
-  margin: 0;  
+  margin: 0;
   font-size: 40px;
+
   @media (max-width: 900px) {
     font-size: 20px;
   }
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  font-family:'Trebuchet MS',
+  'Lucida Sans Unicode',
+  'Lucida Grande',
+  'Lucida Sans',
+  Arial,
+  sans-serif;
   padding: 12px 16px;
   text-align: center;
   color: var(--color-light-blue);
@@ -220,4 +230,108 @@
   border-radius: 10px;
   box-sizing: border-box;
 
+}
+
+.homepage-button-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .homepage-button-links {
+    grid-template-columns: 1fr;
+      justify-items: center;
+
+  }
+}
+
+
+.image-link {
+  display: grid;
+  place-items: center;
+  width: 400px;
+  height: 225px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/IMG_20260907_111453.jpg") center / cover no-repeat;
+}
+
+.image-link:hover {
+  filter: brightness(1.15);
+}
+
+.frog-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/frog_photo.jpg") center / cover no-repeat;
+}
+
+.looking-at-temple-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/cropped_looking_at_temple.jpg") center / cover no-repeat;
+}
+
+.temple-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/march-temple.jpg") center / cover no-repeat;
+}
+
+.travel-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/car_selfie.jpg") center / cover no-repeat;
+}
+
+.tree-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/cropped_tree.jpg") center / cover no-repeat;
+}
+
+.guest-info-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/20260719_195501.jpg") center / cover no-repeat;
+}
+
+
+
+
+
+.travel-sort {
+  width: 260px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-apricot);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--color-eucalyptus);
+  box-shadow: 0 4px 12px rgba(30, 103, 90, 0.12);
+  font-family: var(--sans);
+  font-size: 18px;
+}
+
+.airport-card {
+  width: min(100%, 600px);
+  margin: 24px auto;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid var(--color-apricot);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--color-eucalyptus);
+  box-shadow: 0 4px 12px rgba(30, 103, 90, 0.12);
+  font-family: var(--sans);
+  font-size: 18px;
 }

@@ -6,7 +6,7 @@ const TravelInfo = () => {
   const [error, setError] = useState('');
 
   const [selectedValue, setSelectedValue] = useState('recommended');
-
+  const [hasSelected, setHasSelected] = useState(false);
 
   useEffect(() => {
     const loadAirports = async () => {
@@ -41,9 +41,10 @@ const TravelInfo = () => {
   });
 
 
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
-  };
+const handleChange = (event) => {
+  setHasSelected(true);
+  setSelectedValue(event.target.value);
+};
 
 
 
@@ -53,13 +54,15 @@ const TravelInfo = () => {
 
       <h1>Travel Information</h1>
 
+      <h2>Block Hotel Rooms</h2>
+      <p>There is a strong possibility that we will have block hotel rooms available in Nauvoo for family and friends traveling long distances. More information to come. Contact Hannah or Miles if you think you will need a hotel for the night before and/or after the wedding. </p>
+
 
       <h2>Closest Airports</h2>
 
-      <label style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        <span>Sort:</span>
-        <select value={selectedValue} onChange={handleChange}>
-          <option value="recommended">Recommended</option>
+      <label style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end'}}>
+        <select className="travel-sort" value={selectedValue} onChange={handleChange}>
+          <option value="recommended">{hasSelected ? 'Recommended' : 'Sort By'}</option>
           <option value="distance">Closest First</option>
           <option value="busiest">Most Flights</option>
         </select>
@@ -69,18 +72,16 @@ const TravelInfo = () => {
       {isLoading && <p>Loading airports...</p>}
       {error && <p>{error}</p>}
       {!isLoading && !error && sortedAirports.map((airport) => (
-        <div key={airport.name}>
+        <div className="airport-card" key={airport.name}>
           <h4>{airport.name} ({airport.code})</h4>
           <p>{airport.location} - {airport.milesAway} miles from Nauvoo </p>
-          {airport.note && <p>{airport.note}</p>}
+          {airport.note && <p style={{fontStyle:"italic"}}>{airport.note}</p>}
         </div>
       ))}
 
       <br></br>
 
-      <h2>Block Hotel Rooms</h2>
-      <p>There is a strong possibility that we will have block hotel rooms available in Nauvoo for family and friends traveling long distances. More information to come. Contact Hannah or Miles if you think you will need a hotel for the night before and/or after the wedding. </p>
-
+      
 
 
       <br></br>

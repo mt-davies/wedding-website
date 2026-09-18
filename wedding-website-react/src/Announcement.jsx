@@ -56,10 +56,10 @@ const Announcement = () => {
 
       <br></br>
 
-      <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)"}}>Hannah McGinty</h1>
+      <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)" }}>Hannah McGinty</h1>
       <h3 style={{ fontFamily: "var(--font-cursive)" }}>and</h3>
-      <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)"}}>Miles Davies</h1>
-      <h2 style={{fontStyle: "italic"}}> are getting married!</h2>
+      <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)" }}>Miles Davies</h1>
+      <h2 style={{ fontStyle: "italic" }}> are getting married!</h2>
 
 
       <div className="main-image-container">
@@ -85,13 +85,25 @@ const Announcement = () => {
       <h2>February 27, 2027</h2>
       <h2>Nauvoo, Illinois</h2>
 
-      <a href="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</a>
 
-      <br></br>
+      <div className="homepage-button-links">
 
-      <Link to="/travel">Travel Info</Link>
+        <a className="image-link tree-image" href="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</a>
 
-      <p>More details about the wedding to come! </p>
+
+
+        <Link to="/travel" className="image-link travel-image">Travel Info</Link>
+        
+        {false && <Link to="/schedule" className="image-link temple-image">Schedule</Link>}
+
+        {false && <Link to="/guestinfo" className="image-link guest-info-image">Guest Info</Link>}
+
+        {false && <Link to="/registry" className="image-link frog-image">Gift Registry</Link>}
+
+        {false && <Link to="/gallery" className="image-link looking-at-temple-image">Gallery</Link>}
+
+      </div>
+
 
       <br></br>
 
