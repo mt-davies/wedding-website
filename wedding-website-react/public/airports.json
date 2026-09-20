@@ -5,6 +5,7 @@
     "location": "Moline, IL",
     "code": "MLI",
     "milesAway": 100,
+    "driveTime": "1 hour 56 minutes",
     "numFlights": 17
   },
   {
@@ -13,6 +14,7 @@
     "location": "Peoria, IL",
     "code": "PIA",
     "milesAway": 101,
+    "driveTime": "2 hours 1 minute",
     "numFlights": 15
   },
   {
@@ -21,6 +23,7 @@
     "location": "Cedar Rapids, IA",
     "code": "CID",
     "milesAway": 114,
+    "driveTime": "2 hours 2 minutes",
     "numFlights": 29,
     "note": "Best if you need to stop in Iowa City along the way."
   },
@@ -30,6 +33,7 @@
     "location": "St. Louis, MO",
     "code": "STL",
     "milesAway": 166,
+    "driveTime": "3 hours 4 minutes",
     "numFlights": 206,
     "note": "This will take a longer drive to Nauvoo once you land, but you may have more options for flights."
   },
@@ -39,6 +43,7 @@
     "location": "Burlington, IA",
     "code": "BRL",
     "milesAway": 27,
+    "driveTime": "38 minutes",
     "numFlights": 1,
     "note": "Only flies to and from Chicago via Contour Airlines, so flight options are limited."
   },
@@ -48,6 +53,7 @@
     "location": "Quincy, IL",
     "code": "UIN",
     "milesAway": 55,
+    "driveTime": "1 hour 6 minutes",
     "numFlights": 2,
     "note": "Only flies to and from Chicago and Nashville via Contour Airlines, so flight options are also limited."
   }

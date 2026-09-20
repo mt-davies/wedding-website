@@ -252,7 +252,9 @@
 .image-link {
   display: grid;
   place-items: center;
-  width: 400px;
+  width: 95%;
+  max-width: 400px;
+  box-sizing: border-box;
   height: 225px;
   color: white;
   font-size: 1.5rem;
@@ -323,7 +325,9 @@
 }
 
 .airport-card {
-  width: min(100%, 600px);
+    width: 95%;
+  max-width: 600px;
+  box-sizing: border-box;
   margin: 24px auto;
   padding: 20px;
   text-align: left;
