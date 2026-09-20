@@ -1,7 +1,7 @@
 TODO: 
 Finish styling buttons on home page, travel page
 Build schedule page, attire, gallery, registry
-
+Add estimated drive times to travel page
 
 
 
