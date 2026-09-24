@@ -2,6 +2,7 @@ import { HashRouter as Router, Navigate, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Announcement from './Announcement'
 import TravelInfo from './TravelInfo'
+import Schedule from './Schedule'
 
 function App() {
 
@@ -19,16 +20,23 @@ function App() {
 
 
           <Route
-            path="/announcement"//TODO: update paths to what they'll be on the published website
+            path="/announcement"
             element={
               <Announcement />
             }
           />
 
           <Route
-            path="/travel"//TODO: update paths to what they'll be on the published website
+            path="/travel"
             element={
               <TravelInfo />
+            }
+          />
+
+          <Route
+            path="/schedule"
+            element={
+              <Schedule />
             }
           />
 
