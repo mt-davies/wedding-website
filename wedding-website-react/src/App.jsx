@@ -3,6 +3,7 @@ import './App.css'
 import Announcement from './Announcement'
 import TravelInfo from './TravelInfo'
 import Schedule from './Schedule'
+import Registry from './Registry';
 
 function App() {
 
@@ -40,6 +41,13 @@ function App() {
             }
           />
 
+
+          <Route
+            path="/registry"
+            element={
+              <Registry />
+            }
+          />
         </Routes>
 
       </Router>
