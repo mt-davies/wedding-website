@@ -3,6 +3,9 @@ import './App.css'
 import Announcement from './Announcement'
 import TravelInfo from './TravelInfo'
 import Schedule from './Schedule'
+import ScrollToTop from './ScrollToTop'
+import GuestInfo from './GuestInfo';
+import Colors from './Colors'
 
 function App() {
 
@@ -10,6 +13,7 @@ function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"//Main site also routes to Announcement
@@ -37,6 +41,20 @@ function App() {
             path="/schedule"
             element={
               <Schedule />
+            }
+          />
+
+          <Route
+            path="/guestinfo"
+            element={
+              <GuestInfo />
+            }
+          />
+
+          <Route
+            path="/colors"
+            element={
+              <Colors />
             }
           />
 

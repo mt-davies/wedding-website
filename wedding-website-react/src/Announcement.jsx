@@ -96,7 +96,7 @@ const Announcement = () => {
         
         {true && <Link to="/schedule" className="image-link temple-image">Schedule</Link>}
 
-        {false && <Link to="/guestinfo" className="image-link guest-info-image">Guest Info</Link>}
+        {true && <Link to="/guestinfo" className="image-link guest-info-image">Guest Info</Link>}
 
         {false && <Link to="/registry" className="image-link frog-image">Gift Registry</Link>}
 
