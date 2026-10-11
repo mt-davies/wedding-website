@@ -8,9 +8,6 @@ const Colors = () => {
 
 
 
-
-
-
     return (
         <div>
 
