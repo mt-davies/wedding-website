@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const GuestInfo = () => {
+const Colors = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState('');
 
@@ -24,4 +24,4 @@ const GuestInfo = () => {
     );
 };
 
-export default GuestInfo;
+export default Colors;
