@@ -20,6 +20,11 @@ const Schedule = () => {
 
             <h5>February 27, 2027</h5>
 
+            <div className='timeline'>
+                <div className='timeline-line'></div>
+                <div className='half-circle-top'></div>
+            </div>
+
             <div className="major-event">
                 <h3>Private Temple Marriage Ceremony</h3>
                 <p className="major-event-time">10:00 am</p>
@@ -29,9 +34,12 @@ const Schedule = () => {
                 <p>If you are attending this ceremony, please RSVP as soon as possible using the form we sent you. Arrive at the temple by 9:30. </p>
                 <a href="https://www.churchofjesuschrist.org/comeuntochrist/article/temples">More about Temple Ceremonies</a>
             </div>
-            <br></br>
-            <p>-------------------------------------</p>
-            <br></br>
+
+            <div className='timeline'>
+                <div className='half-circle-bottom'></div>
+                <div className='timeline-line'></div>
+                <div className='half-circle-top'></div>
+            </div>
 
             <div className="major-event">
                 <h3>Ring Ceremony</h3>
@@ -41,9 +49,11 @@ const Schedule = () => {
                 <p>The ring ceremony will start promptly at 4. </p>
             </div>
 
-             <br></br>
-            <p>-------------------------------------</p>
-            <br></br>
+            <div className='timeline'>
+                <div className='half-circle-bottom'></div>
+                <div className='timeline-line'></div>
+                <div className='half-circle-top'></div>
+            </div>
 
             <div className="major-event">
                 <h3>Reception</h3>
@@ -51,12 +61,13 @@ const Schedule = () => {
                 <p className="major-event-location">The Church of Jesus Christ of Latter-day Saints</p>
                 <p className="major-event-address">380 N Durphy St, Nauvoo, IL 62354</p>
                 <p>There will be refreshments following the ring ceremony. Then, get ready to dance! </p>
+                <p>The reception may go longer than 6:30, but you may leave at any point.</p>
             </div>
 
-            <br></br>
-
-
-
+            <div className='timeline'>
+                <div className='half-circle-bottom'></div>
+                <div className='timeline-line'></div>
+            </div>
 
             <br></br>
         </div>
