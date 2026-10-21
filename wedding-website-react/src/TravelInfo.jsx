@@ -58,11 +58,15 @@ const handleChange = (event) => {
 
       <h1>Travel Information</h1>
 
-      <h2 style={{marginTop: "60px", marginBottom: "20px"}}>Block Hotel Rooms</h2>
-      <p>There is a strong possibility that we will have block hotel rooms available in Nauvoo for family and friends traveling long distances. More information to come. Contact Hannah or Miles if you think you will need a hotel for the night before and/or after the wedding. </p>
+      <h2 style={{marginTop: "60px", marginBottom: "20px", fontSize: "35px"}}>Block Hotel Rooms</h2>
+      <p>There is a strong possibility that we will have block hotel rooms available in Nauvoo for family and friends traveling long distances. More information to come. <a href="mailto:kilometerandpalindrome@gmail.com">Contact us</a> if you think you will need a hotel for the night before and/or after the wedding. </p>
 
 
-      <h2 style={{marginTop: "60px"}}>Closest Airports</h2>
+<h2 style={{marginTop: "60px", marginBottom: "20px", fontSize: "35px"}}>Notes for Drivers</h2>
+      <p>If you cross the Mississippi River at Fort Madison, there is a $2.50 cashless toll to cross the bridge from either direction. This can be avoided by driving through Keokuk or Burlington instead. </p>
+      <p>Winters in the Midwest can be unpredictable. We are hoping for nice weather, but if isn't, please be safe. If any changes to our schedule are made due to weather, we will post an update on this website. </p>
+
+      <h2 style={{marginTop: "60px", fontSize: "35px"}}>Closest Airports</h2>
 
       <label style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end'}}>
         <select className="travel-sort" value={selectedValue} onChange={handleChange}>
