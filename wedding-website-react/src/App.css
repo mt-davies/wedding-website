@@ -340,6 +340,19 @@
   font-size: 18px;
 }
 
+.guest-info-header {
+  margin-top: 30px;
+}
+
+
+.guest-info-images {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 .major-event {
   width: 95%;
   max-width: 1000px;
