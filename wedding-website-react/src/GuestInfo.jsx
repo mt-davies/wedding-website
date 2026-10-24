@@ -18,6 +18,7 @@ const GuestInfo = () => {
             {/* <p>Most guests should wear their Sunday best. You do not need to wear the wedding colors (but they are <Link to="/colors">here</Link> if you would like to) unless you are part of the wedding party or immediate family. Just don't wear a white dress unless you're the bride 😉</p> */}
 
             <p>Bonus points for wearing clothes you can dance in. "Be prepared to bust a move!" </p>
+            <a className='button-link' target="_blank" rel="noopener" href='https://docs.google.com/document/d/1BWyIsdNy17RWUSm3ED6dgebT1WgfgngWVcD-pyHLb1I/edit?usp=sharing'>Attire information for family and wedding party</a>
             
             <h2 className='guest-info-header'>Kids</h2>
             <p>Kids are 100% welcome at the ring ceremony/reception. We need their help to keep the dance floor alive! </p>
