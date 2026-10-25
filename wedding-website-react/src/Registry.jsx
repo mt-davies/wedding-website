@@ -32,6 +32,13 @@ const Registry = () => {
             <div className='registry-containers'>
                 <a className='button-link' href='https://www.amazon.com/wedding/share/TwoFrogsInAPond'>View Amazon Registry</a>
             </div>
+
+        <p></p>
+
+            <img className="guest-info-images"   src='..\images\caseys-vs-maverik.png'></img>
+
+
+
         </div>
     );
 };
