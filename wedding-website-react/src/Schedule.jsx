@@ -31,7 +31,7 @@ const Schedule = () => {
                 <p className="major-event-location">Nauvoo Temple</p>
                 <p className="major-event-address"> 50 N Wells St, Nauvoo, IL</p>
                 <p className="temple-disclaimer-short">Due to the sacred nature of temples in our religion, as well as very limited seating, only some members of our church will be able to attend the marriage and sealing ceremony. But don't worry, we want to celebrate this day with all our friends and loved ones, so we'll have a ring ceremony in the afternoon for everyone to attend! Along with many special moments during the reception...</p>
-                <p>If you are attending this ceremony, please RSVP as soon as possible using the form we sent you. Arrive at the temple by 9:30. </p>
+                <p>If you are attending this ceremony, please RSVP as soon as possible using the form we sent you. More details on when to arrive can be found on the RSVP form, or contact us for more information.</p>
                 <a href="https://www.churchofjesuschrist.org/comeuntochrist/article/temples">More about Temple Ceremonies</a>
             </div>
 
