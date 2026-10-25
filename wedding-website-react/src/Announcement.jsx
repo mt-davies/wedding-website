@@ -88,7 +88,7 @@ const Announcement = () => {
 
       <div className="homepage-button-links">
 
-        <a className="image-link tree-image" href="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</a>
+        {/* <a className="image-link tree-image" href="https://www.zola.com/wedding-planning/digital-save-the-date/Wj2Z4wO48">Request an Invite</a> */}
 
 
 
