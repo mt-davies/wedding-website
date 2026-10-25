@@ -16,13 +16,22 @@ const Registry = () => {
 
             <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
 
-            <h2>Registry</h2>
+            <h2>Gift Registry</h2>
 
-            <a href='https://www.zola.com/registry/hannahandmilesfebruary27 '>Zola</a>
+            <p>We have items on both Zola and Amazon.</p>
+
             <br></br>
 
-            <a href='https://www.amazon.com/wedding/share/TwoFrogsInAPond'>Amazon</a>
+            <div className='registry-containers'>
+                <a className='button-link' href='https://www.zola.com/registry/hannahandmilesfebruary27 '>View Zola Registry</a>
 
+            </div>
+
+            <br></br>
+
+            <div className='registry-containers'>
+                <a className='button-link' href='https://www.amazon.com/wedding/share/TwoFrogsInAPond'>View Amazon Registry</a>
+            </div>
         </div>
     );
 };
