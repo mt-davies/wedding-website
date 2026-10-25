@@ -1,10 +1,75 @@
 [
   {
-    "name": "Dark Green", 
-    "code": "hex", 
+    "name": "Basil Green", 
+    "code": "#719055", 
     "attire": true, 
     "storeGuide": ""
   },  
   {
-    }
+    "name": "Eucalyptus", 
+    "code": "#1e675a", 
+    "attire": false, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Sage Green", 
+    "code": "#9caf88", 
+    "attire": true, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Canary", 
+    "code": "#fce999", 
+    "attire": true, 
+    "storeGuide": ""
+  },
+  {
+    "name": "Lemon", 
+    "code": "#Fbd421", 
+    "attire": false, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Apricot", 
+    "code": "#Ffb27f", 
+    "attire": true, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Pastel Orange", 
+    "code": "#Ff9d56", 
+    "attire": false, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Powder Pink", 
+    "code": "#ecc6c3", 
+    "attire": true, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Rosette", 
+    "code": "#e0aa9e", 
+    "attire": true, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Lilac", 
+    "code": "#e6cbf8", 
+    "attire": true, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Cornflower Blue", 
+    "code": "#e6cbf8", 
+    "attire": true, 
+    "storeGuide": ""
+  }, 
+  {
+    "name": "Wheat", 
+    "code": "#F9e4bc", 
+    "attire": false, 
+    "storeGuide": ""
+  }
+
 ]
