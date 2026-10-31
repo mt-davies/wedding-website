@@ -7,6 +7,8 @@ import Registry from './Registry'
 import ScrollToTop from './ScrollToTop'
 import GuestInfo from './GuestInfo'
 import Colors from './Colors'
+import Gallery from './Gallery'
+import GallerySelect from './GallerySelect';
 
 function App() {
 
@@ -63,6 +65,20 @@ function App() {
             path="/colors"
             element={
               <Colors />
+            }
+          />
+
+          <Route
+            path="/gallery"
+            element={
+              <GallerySelect />
+            }
+          />
+
+          <Route
+            path="/gallery/photos/:collection"
+            element={
+              <Gallery />
             }
           />
 
