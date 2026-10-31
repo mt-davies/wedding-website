@@ -7,6 +7,7 @@ import Registry from './Registry'
 import ScrollToTop from './ScrollToTop'
 import GuestInfo from './GuestInfo'
 import Colors from './Colors'
+import Gallery from './Gallery'
 
 function App() {
 
@@ -63,6 +64,13 @@ function App() {
             path="/colors"
             element={
               <Colors />
+            }
+          />
+
+          <Route
+            path="/gallery"
+            element={
+              <Gallery />
             }
           />
 
