@@ -100,7 +100,11 @@ const Announcement = () => {
 
         {true && <Link to="/registry" className="image-link frog-image">Gift Registry</Link>}
 
-        {false && <Link to="/gallery" className="image-link looking-at-temple-image">Gallery</Link>}
+
+      </div>
+
+      <div className="homepage-button-single-link">
+        {true && <Link to="/gallery" className="image-link looking-at-temple-image">Gallery</Link>}
 
       </div>
 
