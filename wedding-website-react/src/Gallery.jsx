@@ -2,8 +2,16 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 const collections = {
-  engagement: 'engagement.json',
-  dating: 'dating.json',
+  engagement: {
+    jsonFile: 'engagement.json',
+    dateOrder: 'desc',
+    title: 'Engagement Photos!',
+  },
+  dating: {
+    jsonFile: 'dating.json',
+    dateOrder: 'asc',
+    title: 'Our Story Through Photos',
+  },
 };
 
 const Gallery = () => {
@@ -11,15 +19,33 @@ const Gallery = () => {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
+  const [columnCount, setColumnCount] = useState(3);
 
   useEffect(() => {
-    const jsonFile = Object.hasOwn(collections, collection) ? collections[collection] : undefined;
+    const mobileQuery = window.matchMedia('(max-width: 600px)');
+    const tabletQuery = window.matchMedia('(max-width: 900px)');
+    const updateColumnCount = () => {
+      setColumnCount(mobileQuery.matches ? 1 : tabletQuery.matches ? 2 : 3);
+    };
+
+    updateColumnCount();
+    mobileQuery.addEventListener('change', updateColumnCount);
+    tabletQuery.addEventListener('change', updateColumnCount);
+
+    return () => {
+      mobileQuery.removeEventListener('change', updateColumnCount);
+      tabletQuery.removeEventListener('change', updateColumnCount);
+    };
+  }, []);
+
+  useEffect(() => {
+    const config = Object.hasOwn(collections, collection) ? collections[collection] : undefined;
     const controller = new AbortController();
 
     setImages([]);
     setError('');
 
-    if (!jsonFile) {
+    if (!config) {
       setError('This gallery collection does not exist.');
       setIsLoading(false);
       return () => controller.abort();
@@ -30,7 +56,7 @@ const Gallery = () => {
     const loadImages = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.BASE_URL}images/gallery/${collection}/${jsonFile}`,
+          `${import.meta.env.BASE_URL}images/gallery/${collection}/${config.jsonFile}`,
           { signal: controller.signal }
         );
 
@@ -40,7 +66,7 @@ const Gallery = () => {
 
         const data = await response.json();
         if (!Array.isArray(data) || !data.every((image) => image && typeof image.filename === 'string')) {
-          throw new Error(`Invalid image list in ${jsonFile}`);
+          throw new Error(`Invalid image list in ${config.jsonFile}`);
         }
 
         setImages(data);
@@ -62,26 +88,40 @@ const Gallery = () => {
     return () => controller.abort();
   }, [collection]);
 
-  const sortedImages = [...images].sort(
-    (first, second) => Number(first.preferredOrder) - Number(second.preferredOrder)
-  );
+  const config = collections[collection];
+  const sortedImages = config
+    ? [...images].sort((first, second) => {
+        const dateOrder = first.date.localeCompare(second.date);
+        const byDate = config.dateOrder === 'desc' ? -dateOrder : dateOrder;
+
+        return byDate || first.filename.localeCompare(second.filename);
+      })
+    : images;
+  const galleryColumns = Array.from({ length: columnCount }, () => []);
+  sortedImages.forEach((image, index) => {
+    galleryColumns[index % columnCount].push(image);
+  });
 
   return (
     <div>
       <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
-      <h1>{collection ? `${collection[0].toUpperCase()}${collection.slice(1)} Gallery` : 'Gallery'}</h1>
+      <h2>{config?.title || (collection ? `${collection[0].toUpperCase()}${collection.slice(1)} Gallery` : 'Gallery')}</h2>
 
       {isLoading && <p>Loading images...</p>}
       {error && <p role="alert">{error}</p>}
       {!isLoading && !error && (
         <div className="gallery-grid">
-          {sortedImages.map((image) => (
-            <div className="gallery-image-container" key={image.filename}>
-              <img
-                className="gallery-image"
-                src={`${import.meta.env.BASE_URL}images/gallery/${collection}/${encodeURIComponent(image.filename)}`}
-                alt={image.caption || image.filename}
-              />
+          {galleryColumns.map((column, columnIndex) => (
+            <div className="gallery-column" key={columnIndex}>
+              {column.map((image) => (
+                <div className="gallery-image-container" key={image.filename}>
+                  <img
+                    className="gallery-image"
+                    src={`${import.meta.env.BASE_URL}images/gallery/${collection}/${encodeURIComponent(image.filename)}`}
+                    alt={image.caption || image.filename}
+                  />
+                </div>
+              ))}
             </div>
           ))}
         </div>
