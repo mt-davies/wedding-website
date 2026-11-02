@@ -1,4 +1,9 @@
 [
+     {
+        "filename": "first-date.jpg",
+        "date": "2026-01-17",
+        "caption": ""
+    },
     {
         "filename": "conference-snacks.jpg",
         "date": "2026",
@@ -16,7 +21,7 @@
     },
     {
         "filename": "blue-elephant.jpg",
-        "date": "2026",
+        "date": "2026-02-07",
         "caption": ""
     },
     {
@@ -25,18 +30,13 @@
         "caption": ""
     },
     {
-        "filename": "first-date.jpg",
-        "date": "2026",
-        "caption": ""
-    },
-    {
         "filename": "holding-hands.jpg",
-        "date": "2026",
+        "date": "2026-02-07",
         "caption": ""
     },
     {
         "filename": "i-love-you.jpg",
-        "date": "2026",
+        "date": "2026-02-28",
         "caption": ""
     },
     {
@@ -56,7 +56,7 @@
     },
     {
         "filename": "frog-pops.jpg",
-        "date": "2026",
+        "date": "2026-03-13",
         "caption": ""
     },
     {
@@ -71,7 +71,27 @@
     },
     {
         "filename": "big-boy.jpg",
-        "date": "2026",
+        "date": "2026-06-02",
         "caption": ""
+    },
+    {
+        "filename": "IMG_5770.jpg",
+        "date": "2026-03-19"
+    },
+    {
+        "filename": "IMG_5762.JPG",
+        "date": "2026-03-19"
+    },
+    {
+        "filename": "20260613_162330.jpg",
+        "date": "2026-06-13"
+    },
+    {
+        "filename": "20260523_190943.jpg",
+        "date": "2026-05-23"
+    },
+    {
+        "filename": "20260228_123714.jpg",
+        "date": "2026-02-28"
     }
 ]
