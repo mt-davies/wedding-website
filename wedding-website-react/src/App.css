@@ -214,6 +214,12 @@
 
   @media (max-width: 900px) {
     font-size: 20px;
+<<<<<<< Updated upstream
+=======
+  }
+  @media (max-width: 500px) {
+    font-size: 12px;
+>>>>>>> Stashed changes
   }
 
   font-family:'Trebuchet MS',
@@ -449,26 +455,18 @@
 .button-link {
   display: inline-block;
 
-  /* Step 2: Styling and spacing */
   padding: 12px 24px;
   background-color: var(--color-sage);
-  /* Primary button color */
   color: #ffffff;
-  /* Text color */
-  font-size: 16px;
-  /* font-weight: bold;*/
+  font-size: 16px;  
+  margin: 1rem;
 
-  /* Step 3: Remove default link underlining and center text */
   text-decoration: none;
   text-align: center;
 
-  /* Step 4: Optional aesthetic polishes */
   border-radius: 6px;
-  /* Rounded corners */
   cursor: pointer;
-  /* Forces the pointer finger icon */
   transition: background-color 0.2s ease;
-  /* Smooth hover effect */
 }
 
 .registry-containers {
