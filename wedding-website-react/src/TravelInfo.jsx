@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 const TravelInfo = () => {
@@ -54,7 +55,7 @@ const handleChange = (event) => {
   return (
     <div>
 
-      <Link to="/" style={{color: 'black'}}>Back to Home</Link>
+      <Navbar></Navbar>
 
       <h1>Travel Information</h1>
 

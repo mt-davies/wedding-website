@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { GoArrowLeft } from "react-icons/go";
 import { useLocation, useNavigate } from 'react-router-dom';
 
 
@@ -16,8 +17,7 @@ function Navbar() {
     const navigate = useNavigate();
 
     const isAnnouncementPage = pathname === '/'; // Use your Announcement route
-    const isGalleryPage = pathname === '/gallery/engagement'; // Use your Gallery route
-
+    const isGalleryPage = pathname.startsWith('/gallery/') && pathname.length > '/gallery/'.length;
     const handleBack = () => {
         navigate(isGalleryPage ? '/gallery' : '/'); // Use your Gallery Select route
     };
@@ -28,7 +28,8 @@ function Navbar() {
 
             {!isAnnouncementPage && (
                 <button type="button" className="back-button" onClick={handleBack}>
-                    Back
+                    <GoArrowLeft />
+
                 </button>
             )}
 

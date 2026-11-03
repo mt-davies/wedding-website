@@ -107,7 +107,6 @@ const Gallery = () => {
     <div>
 
       <Navbar></Navbar>
-      <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
 
       
 

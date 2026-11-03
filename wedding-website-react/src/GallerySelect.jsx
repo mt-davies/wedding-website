@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Navbar from './Navbar';
 
 
 
@@ -25,7 +26,7 @@ const GallerySelect = () => {
 
         <div>
 
-            <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
+            <Navbar></Navbar>
 
             <h1>Gallery</h1>
 

@@ -12,7 +12,6 @@ const Colors = () => {
     return (
         <div>
 
-            <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
 
             <Navbar></Navbar>
 
@@ -20,7 +19,7 @@ const Colors = () => {
 
             <a href='https://docs.google.com/document/d/1BWyIsdNy17RWUSm3ED6dgebT1WgfgngWVcD-pyHLb1I/edit?usp=sharing'>Colors document</a>
 
-            <p>More info to come</p>
+            
 
         </div>
     );
