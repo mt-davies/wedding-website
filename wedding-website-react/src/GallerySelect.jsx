@@ -35,9 +35,9 @@ const GallerySelect = () => {
 
 
 
-                {true && <Link to="/gallery/photos/engagement" className="image-link temple-image">Engagement Photoshoots</Link>}
+                {true && <Link to="/gallery/engagement" className="image-link engagement-image">Engagement Photoshoots</Link>}
 
-                {true && <Link to="/gallery/photos/dating" className="image-link guest-info-image">Our Story Through Photos</Link>}
+                {true && <Link to="/gallery/dating" className="image-link dating-image">Our Story Through Photos</Link>}
 
 
             </div>

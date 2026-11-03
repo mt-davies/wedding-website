@@ -76,7 +76,7 @@ function App() {
           />
 
           <Route
-            path="/gallery/photos/:collection"
+            path="/gallery/:collection"
             element={
               <Gallery />
             }
