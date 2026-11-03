@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 const Colors = () => {
@@ -12,6 +13,8 @@ const Colors = () => {
         <div>
 
             <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
+
+            <Navbar></Navbar>
 
             <h2>Colors</h2>
 

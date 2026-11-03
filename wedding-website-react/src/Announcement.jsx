@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Navbar from './Navbar';
 
 
 
@@ -55,6 +56,8 @@ const Announcement = () => {
     <div>
 
       <br></br>
+
+      <Navbar></Navbar>
 
       <h1 style={{ fontFamily: "var(--font-cursive)", fontSize: "clamp(2.25rem, 7vw, 5rem)" }}>Hannah McGinty</h1>
       <h3 style={{ fontFamily: "var(--font-cursive)" }}>and</h3>

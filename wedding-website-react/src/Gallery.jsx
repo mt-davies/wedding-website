@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const collections = {
   engagement: {
@@ -104,7 +105,12 @@ const Gallery = () => {
 
   return (
     <div>
+
+      <Navbar></Navbar>
       <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
+
+      
+
       <h2>{config?.title || (collection ? `${collection[0].toUpperCase()}${collection.slice(1)} Gallery` : 'Gallery')}</h2>
 
       {isLoading && <p>Loading images...</p>}
