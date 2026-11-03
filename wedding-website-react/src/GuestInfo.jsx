@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LuExternalLink } from "react-icons/lu";
+import Navbar from './Navbar';
 
 
 const GuestInfo = () => {
@@ -11,7 +12,7 @@ const GuestInfo = () => {
     return (
         <div>
 
-            <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
+            <Navbar></Navbar>
 
             <h2 className='guest-info-header'>Attire</h2>
 
