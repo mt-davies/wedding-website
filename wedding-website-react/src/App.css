@@ -213,17 +213,10 @@
   font-size: 40px;
 
   @media (max-width: 900px) {
-<<<<<<< HEAD
     font-size: 20px;
-<<<<<<< Updated upstream
-=======
   }
   @media (max-width: 500px) {
     font-size: 12px;
->>>>>>> Stashed changes
-=======
-    font-size: 16px;
->>>>>>> c5a740ba4a55f0f51f480f653849d89706d53f7c
   }
 
   font-family:'Trebuchet MS',
@@ -472,10 +465,6 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-}
-
-.button-link:hover {
-  filter:brightness(0.90)
 }
 
 .registry-containers {
