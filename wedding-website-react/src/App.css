@@ -319,6 +319,18 @@
     url("/images/gallery/20260719_195501.jpg") center / cover no-repeat;
 }
 
+.engagement-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/engagement/7a34e3f4-ec56-4295-b17c-60568f165fdc.jpg") center / cover no-repeat;
+}
+
+.dating-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/gallery/dating/first-date.jpg") center / cover no-repeat;
+}
+
 
 
 
