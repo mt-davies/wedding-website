@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { LuExternalLink } from "react-icons/lu"; 
+import { LuExternalLink } from "react-icons/lu";
+import Navbar from './Navbar';
 
 const Registry = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +16,7 @@ const Registry = () => {
     return (
         <div>
 
-            <Link to="/" style={{ color: 'black' }}>Back to Home</Link>
+            <Navbar></Navbar>
 
             <h2>Gift Registry</h2>
 
@@ -34,9 +35,9 @@ const Registry = () => {
                 <a className='button-link' target="_blank" rel="noopener" href='https://www.amazon.com/wedding/share/TwoFrogsInAPond'>View Amazon Registry <LuExternalLink aria-hidden="true" size={14} /></a>
             </div>
 
-        <p></p>
+            <p></p>
 
-            <img className="guest-info-images"   src='..\images\caseys-vs-maverik.png'></img>
+            <img className="guest-info-images" src='..\images\caseys-vs-maverik.png'></img>
 
 
 
