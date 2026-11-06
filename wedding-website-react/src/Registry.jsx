@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { LuExternalLink } from "react-icons/lu";
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Registry = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +40,7 @@ const Registry = () => {
 
             <img className="guest-info-images" src='..\images\caseys-vs-maverik.png'></img>
 
-
+            <Footer></Footer>
 
         </div>
     );

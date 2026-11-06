@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const collections = {
   engagement: {
@@ -131,6 +132,7 @@ const Gallery = () => {
           ))}
         </div>
       )}
+      <Footer></Footer>
     </div>
   );
 };

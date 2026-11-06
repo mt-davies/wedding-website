@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 const Colors = () => {
@@ -19,7 +20,7 @@ const Colors = () => {
 
             <a href='https://docs.google.com/document/d/1BWyIsdNy17RWUSm3ED6dgebT1WgfgngWVcD-pyHLb1I/edit?usp=sharing'>Colors document</a>
 
-            
+            <Footer></Footer>
 
         </div>
     );

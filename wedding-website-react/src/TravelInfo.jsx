@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 const TravelInfo = () => {
@@ -92,9 +93,10 @@ const handleChange = (event) => {
       <br></br>
 
       
-
+      
 
       <br></br>
+      <Footer></Footer>
     </div>
   );
 };
