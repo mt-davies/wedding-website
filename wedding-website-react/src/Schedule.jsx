@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 const Schedule = () => {
@@ -71,6 +72,7 @@ const Schedule = () => {
             </div>
 
             <br></br>
+            <Footer></Footer>
         </div>
     );
 };

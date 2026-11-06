@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LuExternalLink } from "react-icons/lu";
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 const GuestInfo = () => {
@@ -44,6 +45,7 @@ const GuestInfo = () => {
 
 
             <p></p>
+            <Footer></Footer>
         </div>
     );
 };
